@@ -145,7 +145,11 @@ label #btn{
   padding-top: 17vw;
   padding-left: 16vw;
 }
-/*about section*/
+/*resume section*/
+
+ul li{
+  list-style-type:disc;
+}
 
   
  
