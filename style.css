@@ -12,7 +12,6 @@ text-decoration: none;
   width: 100%;
   overflow: hidden;
   background-image: url(elegant-smiling-woman-glasses-striped-shirt-using-laptop-computer-while-siting-table-kitchen_171337-13030.jpg);
-  
   background-size: cover;
   background-position: center;
 }
@@ -44,7 +43,9 @@ label #btn{
   padding: 4px 9px;
   transition: all 0.5s;
 }
-
+ li a{
+  text-decoration: none;
+ }
 /*side navbar*/
 
 .sidebar{
@@ -134,7 +135,6 @@ label #btn{
 }
 
 .side-navbar{
-  z-index:;
   width: 9vw;
 }
 .nav-pills li:hover{
@@ -150,6 +150,6 @@ label #btn{
 ul li{
   list-style-type:disc;
 }
+/*services section*/
 
-  
  
