@@ -16,6 +16,7 @@ text-decoration: none;
   background-image: url(elegant-smiling-woman-glasses-striped-shirt-using-laptop-computer-while-siting-table-kitchen_171337-13030.jpg);
   background-size: cover;
   background-position: center;
+  z-index: 1000000;
 }
 #check{
   display: none;
@@ -58,6 +59,7 @@ label #btn{
   background-color:#042331;
   transition: all 0.5s ease;
   margin-bottom: 10px;
+  z-index: 100000;
 }
 #check:checked ~ .sidebar{
   left: 0;
@@ -147,7 +149,12 @@ label #btn{
   padding-top: 17vw;
   padding-left: 16vw;
 }
-
+@media only screen and (max-width: 576px) {
+  .my-name{
+    padding-top: 50vw;
+    padding-left: 16vw;
+  }
+}
 /* about section */
 
 .btn.btn-custom {
@@ -172,6 +179,7 @@ label #btn{
   -webkit-transition: ease-out 0.3s;
   -moz-transition: ease-out 0.3s;
   border: 2px solid orange;
+  margin-left: 75px;
 }
 
 .btn.btn-custom12:hover {
@@ -199,5 +207,177 @@ ul li{
   background-blend-mode: darken;
   
 }
+/* portfolio section */
+/* first demo */
+.col-image{
+  position: relative;
+  width: 50%;
+}
 
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color:rgb(230, 169, 56);
+  overflow: hidden;
+  opacity: .9;
+  width: 0;
+  height: 100%;
+  transition: .4s ease;
+}
+
+.col-image:hover .overlay {
+  width: 100%;
+  left: 0;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+/* second demo */
+.col-image2 {
+  position: relative;
+  width: 50%;
+}
+
+.image2 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(230, 169, 56);
+  opacity: .9;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .4s ease;
+}
+
+.col-image2:hover .overlay2 {
+  width: 100%;
+}
+
+.text2 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+/* fourth demo */
+.col-image3 {
+  position: relative;
+  width: 50%;
+}
+
+.image3 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay3 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgb(230, 169, 56);
+  opacity: .9;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.col-image3:hover .overlay3 {
+  bottom: 0;
+  height: 100%;
+}
+
+.text3 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* fifth */
+.col-image4 {
+  position: relative;
+  width: 50%;
+}
+
+.image4 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(230, 169, 56);
+  opacity: .9;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.col-image4:hover .overlay4 {
+  height: 100%;
+}
+
+.text4 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* contact section */
+.loca-sec{
+  background-color: rgb(247, 227, 213);
+  color: orange;
+}
+.loca-sec:hover{
+  background-color:orange;
+  color: white;
+}
