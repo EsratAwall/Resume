@@ -149,10 +149,10 @@ label #btn{
   padding-top: 17vw;
   padding-left: 16vw;
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 576px) and (min-width:300px)  {
   .my-name{
-    padding-top: 50vw;
-    padding-left: 16vw;
+    padding-top: 54vw;
+    padding-left: 10vw;
   }
 }
 /* about section */
@@ -192,7 +192,12 @@ label #btn{
 .form-control:focus {
   box-shadow: none;
 }
-
+/* fact section */
+@media only screen and (max-width: 576px) and (min-width:300px)  {
+  .fact-12{
+   width: 300px;
+  }
+}
 
 /*resume section*/
 
