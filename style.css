@@ -1,22 +1,24 @@
 
 
-* {
-margin: 0;
-padding: 0;
-list-style-type: none;
-text-decoration: none;
-}
-
 /*navbar-section*/
 
 .first-section{
   height:100vh;
-  width: 100%;
+  /* width: 100%; */
   overflow: hidden;
-  background-image: url(elegant-smiling-woman-glasses-striped-shirt-using-laptop-computer-while-siting-table-kitchen_171337-13030.jpg);
+  background-image: url(./pexels-ivan-samkov-4458554.jpg);
   background-size: cover;
-  background-position: center;
   z-index: 1000000;
+}
+@media screen and (min-width: 200px) and (max-width: 576px){
+  .first-section{
+     
+      } 
+}
+@media screen and (min-width: 577px) and (max-width: 991px){
+  .first-section{
+      background-position: center;
+      } 
 }
 #check{
   display: none;
@@ -179,9 +181,13 @@ label #btn{
   -webkit-transition: ease-out 0.3s;
   -moz-transition: ease-out 0.3s;
   border: 2px solid orange;
-  margin-left: 75px;
+  margin-left: 92px;
 }
-
+@media only screen and (max-width: 576px) and (min-width:300px)  {
+  .btn.btn-custom12{
+    margin-left: 45px;
+  }
+}
 .btn.btn-custom12:hover {
   color: #20212B;
   box-shadow: inset 0 0 0 30px white;
@@ -192,6 +198,10 @@ label #btn{
 .form-control:focus {
   box-shadow: none;
 }
+/* .my-image{
+  height: 400px;
+  width: 200px;
+} */
 /* fact section */
 @media only screen and (max-width: 576px) and (min-width:300px)  {
   .fact-12{
